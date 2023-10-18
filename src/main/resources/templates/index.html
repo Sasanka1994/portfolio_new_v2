@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio - Revin</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+<!-- Header -->
+<header id="mainHeader">
+    <div class="container">
+        <h1 th:text="${name}"></h1>
+        <nav>
+            <a href="#whoami">Who am I</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#Skills">Skills</a>
+            <a href="#education">Education</a>
+        </nav>
+        <div class="actions">
+            <a href="/downloadResume" class="btn-resume">Download Resume</a>
+            <a th:href="${linkedinURL}" target="_blank" class="icon linkedin"><i class="fab fa-linkedin"></i></a>
+            <a th:href="${githubURL}" target="_blank" class="icon github"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+</header>
+
+<!-- Who am I -->
+<section id="whoami">
+    <div class="content-wrapper">
+        <div class="title-container">
+            <span>Aspiring Automation Tester</span>
+            <h1>Passionate About Testing</h1>
+            <p>Hello World! I'm Revin Sasanka. Ensuring top-notch software quality is my passion, and my projects stand
+                as testament to that dedication. I've crafted this portfolio website using Java and Spring Boot.
+                Furthermore, I've deployed it on Heroku for easy access. I'm all about growth, so I'll soon integrate a
+                contact page for effortless interactions. Dive in, explore my tech world, and witness my unwavering
+                commitment to excellence.</p>
+        </div>
+        <div class="video-container">
+            <img src="css/images/luca-bravo-XJXWbfSo2f0-unsplash.jpg" alt="Code in laptop screen">
+        </div>
+    </div>
+</section>
+
+
+<!--What I'm working on-->
+<section id="currentprojects">
+    <div class="content-wrapper">
+        <div class="title-container">
+            <h1 class="section-title">What I'm Working On</h1>
+            <div class="project-container">
+                <div class="project-card">
+                    <img src="css/images/Project1.jpg" alt="Code image on IntelliJ">
+                    <div class="project-details">
+                        <h2>SELENIUM + JAVA AUTOMATION TEST FRAMEWORK</h2>
+                        <p>I'm currently working on an automation test framework, still under construction, built as a
+                            Java Maven project. This framework leverages the robust capabilities of Selenium for web
+                            testing, integrated seamlessly with TestNG for powerful test configurations and execution.
+                            Stay tuned for more updates as this project unfolds!</p>
+                        <p><strong>Company:</strong> Myself company 😂</p>
+                        <p><a class="btn" href="https://github.com/Sasanka1994/SeleniumProject" target="_blank">View on GitHub</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+    <div class="content-wrapper">
+        <div class="title-container">
+            <h1 class="section-title">Projects</h1>
+
+            <div class="project-container">
+                <div class="project-card">
+                    <img src="css/images/Project2.jpg" alt="Sudoku GUI image">
+                    <div class="project-details">
+                        <h2>Sudoku Game (Python)</h2>
+                        <p>A dynamic and engaging Sudoku game developed using the Python programming language.
+                            Utilizing the powerful pygame library, the game boasts a user-friendly interface and smooth
+                            graphics. The game's unique feature is its integration with an external API, ensuring players
+                            receive fresh Sudoku puzzles each time they play. Dive into an immersive experience with varying
+                            levels of difficulty and test your logic and puzzle-solving skills!</p>
+                        <p><a class="btn" href="https://github.com/Sasanka1994/SudokuProject" target="_blank">View on GitHub</a></p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="css/images/Project3.jpg" alt="Github Repo image">
+                    <div class="project-details">
+                        <h2>Personal Website (Angular + Ionic)</h2>
+                        <p>A sleek and responsive personal website meticulously crafted using the Angular framework
+                            combined with the mobile-optimized Ionic framework. This website was not just about design;
+                            it exemplified modern deployment techniques. Hosted using NGINX, the site ran seamlessly
+                            inside a Docker container, ensuring a consistent environment. Furthermore,
+                            leveraging the power and scalability of AWS, the site was deployed on Elastic Beanstalk
+                            for optimum performance and reliability. While the website is currently offline, its
+                            codebase and detailed design principles can be explored on my GitHub repository.</p>
+                        <p><a class="btn" href="https://github.com/Sasanka1994/My-portfolio-app" target="_blank">View on GitHub</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Experience-->
+<section id="experience">
+    <div class="content-wrapper">
+        <div class="title-container">
+            <h1 class="section-title">Experience</h1>
+            <div class="job">
+                <h2>O AUTOMATION TEST ANALYST</h2>
+                <p class="company">1ST PEOPLE SERVICES</p>
+                <p class="location">Canberra, ACT | June, 2021 - Present</p>
+            </div>
+
+            <div class="job">
+                <h2>O IT SUPPORT ENGINEER INTERN</h2>
+                <p class="company">ANTI-CHAOS SOLUTIONS</p>
+                <p class="location">Canberra, ACT | Feb, 2021 - May, 2021</p>
+            </div>
+
+            <div class="job">
+                <h2>O WEB DEVELOPER INTERN</h2>
+                <p class="company">AUSTRALIAN NATIONAL CHARACTER CHECK</p>
+                <p class="location">Canberra, ACT | Oct, 2019 - MAY, 2020</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Skills-->
+<section id="Skills">
+    <div class="content-wrapper">
+        <div class="title-container">
+            <h1 class="section-title">Skills</h1>
+            <div class="skills">
+                <div class="skill-category">
+                    <h3>Programming Languages:</h3>
+                    <ul>
+                        <li>Java</li>
+                        <li>PHP</li>
+                        <li>C++</li>
+                        <li>JavaScript</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Testing tools:</h3>
+                    <ul>
+                        <li>Microfocus Lean FT</li>
+                        <li>Selenium</li>
+                        <li>TestNG</li>
+                        <li>Postman</li>
+                        <li>JMeter</li>
+                        <li>Robot Framework</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Build and Continuous Integration Tools:</h3>
+                    <ul>
+                        <li>Maven</li>
+                        <li>Git/GitHub</li>
+                        <li>Jenkins</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Frameworks and Libraries:</h3>
+                    <ul>
+                        <li>Page Object Model (POM)</li>
+                        <li>REST Assured (for API testing in Java)</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Other Skills:</h3>
+                    <ul>
+                        <li>Test case design techniques</li>
+                        <li>Cross-browser testing</li>
+                        <li>Knowledge of web technologies (HTML, CSS, and JS DOM structure)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--Education-->
+<section id="education">
+    <div class="content-wrapper">
+        <div class="title-container">
+            <h1 class="section-title">Education</h1>
+            <div class="job">
+                <h2>O Bachelor of Software Engineering</h2>
+                <p class="company">University of Canberra</p>
+                <p class="location">ACT, Australia | Aug, 2017 - June, 2019</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer id="mainFooter">
+    <p>© 2023 Revin Sasanka. All rights reserved.</p>
+    <p>Email: revinsasanka@gmail.com</p>
+</footer>
+
+</body>
+</html>
